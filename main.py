@@ -810,6 +810,7 @@ Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
 """
+
 def fun():
     list=[]
     for i in range(1,21):
