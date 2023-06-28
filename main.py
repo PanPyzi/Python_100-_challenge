@@ -799,6 +799,8 @@ fun()
 #----------------------------------------#
 2.10
 
+Line 1000 of https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
+
 Question:
 Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the first 5 elements in the list.
 
@@ -810,10 +812,140 @@ Use list.append() to add values into a list.
 Use [n1:n2] to slice a list
 
 """
-
+"""
 def fun():
     list=[]
     for i in range(1,21):
         list.append(i**2)
     print(list[0:5])
 fun()
+"""
+
+"""
+#----------------------------------------#
+2.10
+
+Question:
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print the last 5 elements in the list.
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+Use [n1:n2] to slice a list
+"""
+"""
+def fun():
+    list=[]
+    for i in range(1,21):
+        list.append(i**2)
+    print(list[-5:])
+fun()
+"""
+"""
+#----------------------------------------#
+2.10
+
+Question:
+Define a function which can generate a list where the values are square of numbers between 1 and 20 (both included). Then the function needs to print all values except the first 5 elements in the list.
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+Use [n1:n2] to slice a list
+
+"""
+"""
+def fun():
+    list=[]
+    for i in range(1,21):
+        list.append(i**2)
+    print(list[5:])
+fun()
+"""
+"""
+#----------------------------------------#
+2.10
+
+Question:
+Define a function which can generate and print a tuple where the value are square of numbers between 1 and 20 (both included). 
+
+Hints:
+
+Use ** operator to get power of a number.
+Use range() for loops.
+Use list.append() to add values into a list.
+Use tuple() to get a tuple from a list.
+"""
+"""
+def fun():
+    list=[]
+    for i in range(1,21):
+        list.append(i**2)
+        tupla=tuple(list)
+
+fun()
+"""
+"""
+#----------------------------------------#
+2.10
+
+Question:
+With a given tuple (1,2,3,4,5,6,7,8,9,10), write a program to print the first half values in one line and the last half values in one line. 
+
+Hints:
+
+Use [n1:n2] notation to get a slice from a tuple.
+
+"""
+"""
+def fun():
+    tupla=(1,2,3,4,5,6,7,8,9,10)
+    print(tupla[:int(len(tupla)/2)])
+    print(tupla[int(len(tupla)/2):])
+
+fun()
+"""
+"""
+  #----------------------------------------#
+2.10
+
+Question:
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). 
+
+Hints:
+
+Use "for" to iterate the tuple
+Use tuple() to generate a tuple from a list.
+"""
+"""
+def fun():
+    inp_tupl=(1,2,3,4,5,6,7,8,9,10)
+    lis=[]
+    for i in inp_tupl:
+        if (i%2==0):
+            lis.append(i)
+    out_tupl=tuple(lis)
+            
+"""
+
+"""  """
+
+"""  """
+
+"""  """
+
+"""  """
+
+"""  """
+
+"""  """
+
+"""  """
+
+"""  """
+
+"""  """
