@@ -914,7 +914,7 @@ fun()
 2.10
 
 Question:
-Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). 
+Write a program to generate and print another tuple whose values are even numbers in the given tuple (1,2,3,4,5,6,7,8,9,10). / 1088
 
 Hints:
 
@@ -932,20 +932,147 @@ def fun():
             
 """
 
-"""  """
+"""Question:
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
 
-"""  """
+Hints:
 
-"""  """
+Use if statement to judge condition.  """
 
-"""  """
+"""
+def prog(sting):
+    sting=sting.upper()
+    if sting== "YES":
+        print("Yes")
+    else:
+        print("No")
+"""
 
-"""  """
 
-"""  """
+""" 3.4
 
-"""  """
+Question:
+Write a program which can filter even numbers in a list by using filter function. The list is: [1,2,3,4,5,6,7,8,9,10].
 
-"""  """
+Hints:
 
-"""  """
+Use filter() to filter some elements in a list.
+Use lambda to define anonymous functions. """
+
+
+"""
+def fil(val):
+    if val%2==0:
+        return True
+    else:
+        return False
+
+lis=[1,2,3,4,5,6,7,8,9,10]
+
+lisst=list(filter(fil,lis))
+print(lisst)
+"""
+
+
+"""#----------------------------------------#
+3.4
+
+Question:
+Write a program which can map() to make a list whose elements are square of elements in [1,2,3,4,5,6,7,8,9,10].
+
+Hints:
+
+Use map() to generate a list.
+Use lambda to define anonymous functions.
+  """
+
+"""
+
+lisst=[1,2,3,4,5,6,7,8,9,10]
+
+
+def sqr(li):
+    x=list(map(lambda x: x*x,li))
+    print(x)
+
+sqr(lisst)
+  """
+
+
+""" #----------------------------------------#
+3.5
+
+Question:
+Write a program which can map() and filter() to make a list whose elements are square of even number in [1,2,3,4,5,6,7,8,9,10].
+
+Hints:
+
+Use map() to generate a list.
+Use filter() to filter elements of a list.
+Use lambda to define anonymous functions.
+ """
+
+
+
+
+
+
+
+
+"""#----------------------------------------#
+3.5
+
+Question:
+Write a program which can filter() to make a list whose elements are even number between 1 and 20 (both included).
+
+Hints:
+
+Use filter() to filter elements of a list.
+Use lambda to define anonymous functions.  """
+
+""" #----------------------------------------#
+3.5
+
+Question:
+Write a program which can map() to make a list whose elements are square of numbers between 1 and 20 (both included).
+
+Hints:
+
+Use map() to generate a list.
+Use lambda to define anonymous functions. """
+
+""" #----------------------------------------#
+7.2
+
+Question:
+Define a class named American which has a static method called printNationality.
+
+Hints:
+
+Use @staticmethod decorator to define class static method.
+ """
+
+""" #----------------------------------------#
+
+7.2
+
+Question:
+Define a class named American and its subclass NewYorker. 
+
+Hints:
+
+Use class Subclass(ParentClass) to define a subclass.
+ """
+
+"""#----------------------------------------#
+
+
+7.2
+
+Question:
+Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area. 
+
+Hints:
+
+Use def methodName(self) to define a method.
+  """
