@@ -1280,6 +1280,14 @@ Hints:
 Use \w to match letters.
 """
 """
+def username(s):
+    us=s.split("@")
+    return us[0]
+print(username(input("E-mail: ")))
+
+"""
+
+"""
 #----------------------------------------#
 Question:
 
@@ -1304,6 +1312,14 @@ Use \w to match letters.
 """
 
 """
+def company(s):
+    us=s.split("@")
+    comp=us[1].split(".")
+    return comp[0]
+print(company(input("E-mail: ")))
+"""
+
+"""
 #----------------------------------------#
 Question:
 
@@ -1325,6 +1341,17 @@ Hints:
 Use re.findall() to find all substring using regex.
 
 """
+
+"""
+import re
+def dig(s):
+    f=re.findall('[0-9]+',s)
+    print(f)
+dig("2sd 3ds 4sds")
+
+"""
+
+
 """
 #----------------------------------------#
 Question:
@@ -1338,6 +1365,11 @@ Use u'strings' format to define unicode string.
 
 """
 """
+
+print(u"strinf")
+
+"""
+"""
 #----------------------------------------# 
 Write a program to read an ASCII string and to convert it to a unicode string encoded by utf-8.
 
@@ -1347,12 +1379,25 @@ Use unicode() function to convert.
 
 """
 """
+
+
+def stri(s):
+    return s.decode("utf-8")
+
+print(stri(b"\x3cdiv\x3e"))
+
+
+"""
+"""
 #----------------------------------------#
 Question:
 
 Write a special comment to indicate a Python source code file is in unicode.
 
 """
+
+# -*- coding: ascii -*-
+
 """
 #----------------------------------------#
 Question:
@@ -1372,6 +1417,17 @@ In case of input data being supplied to the question, it should be assumed to be
 
 Hints:
 Use float() to convert an integer to a float
+
+"""
+"""
+
+def doo(n):
+    s=0
+    for i in range(1,n+1):
+        s+=float(float(i)/(i+1))
+    return s
+
+print(doo(5))
 
 """
 """
